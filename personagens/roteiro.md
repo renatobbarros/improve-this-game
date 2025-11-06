@@ -1,28 +1,28 @@
 # Roteiro do jogo
 ## historia principal
-- um estudante do primeiro periodo que precisa enfrentar 2 materias muito dificeis com professores pessimos
+- Um estudante do primeiro periodo que precisa enfrentar 2 materias muito dificeis com professores pessimos.
 
-- jogo curto, no maximo 10 minutos
-- esquema de luta parecido com pokemon
-- livros inves de poções
-- cada livro consumido, mais xp
-- derrota, reprovar na cadeira
-- vitoria, passar na cadeira
+- Jogo curto, no maximo 10 minutos
+- Esquema de luta parecido com pokemon
+- Livros inves de poções, que te curam ou te dão mais ataque ou defesa.
+- Cada livro consumido, mais xp.
+- Derrota se reprovar na cadeira.
+- Vitoria se passar na cadeira.
 
 ## Personagens
-- principal (input de nome)
-- vilões: maldanado, vermelindo
+- O Protagonista (Player)
+- Vilões: Maldanado, Vermelindo
 
 ## esquema de lutas
-- as lutas são travadas em dias de provas
+- As lutas são travadas em dias de provas
 
-- os ataques dos vilões são (casca de banana) (por que você sta aqui?) (questã dificil)
+- Os ataques dos vilões são (casca de banana) (por que você esta aqui?) (questão dificil)
 
-- os ataques do personagem principal serão (prestei atenção) (respondi listas de questão) (dominei o conteudo)
+- Os ataques do personagem principal serão (prestei atenção) (respondi listas de questão) (dominei o conteudo)
 
 ## atos
 ### 1° a chegada
-- O personagem principal chega na faculdade e é recepcionado pelo neymar (diretor), maldanado(professor), o neymar da as boas vindas de forma calorosa, o maldanado finge ser bom, o neymar sai, o maldanado começa a ser mal e assustar o personagem principal
+- O personagem principal chega na faculdade da "UFCEC" (Universidade Federal de Coisas Extremamente desnecessariamente Complicadas) e é recepcionado pelo o Reitor Neymar e o professor Maldanado, O Neymar da as boas vindas de forma calorosa sem muita enrolação e apenas desejando uma boa sorte na "aventura" do aluno enquanto o Maldanado finge ser bom. O Neymar sai, com o Maldanado revelando seu lado mal e começa a assustar o personagem principal. (Batalha)
 
 ### 2º A prova.
-- Agora, com o protagonista finalmente chegando na sala, ele se prepara para fazer a prova do Vermelindo, um professor muito calmo e calculado que faz a prova mais dificil do curso inteiro.  
+- Agora, com o protagonista finalmente passando pelo o Maldanado, que desistiu de impertunar o protagonista, o mesmo se depara com um veterano, o Vermelindo, que manda em tudo e todos. O protagonista tambem tera que derrotar ele para ganhar seu respeito e conseguir entrar na sala de aula.  
