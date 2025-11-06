@@ -1,5 +1,5 @@
-from personagem import Personagem
-from vilao import Vilao
+from personagens.personagem import Personagem
+from personagens.vilao import Vilao
 
 def main():
     # Criando personagens e vilões
