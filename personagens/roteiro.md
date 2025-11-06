@@ -23,3 +23,6 @@
 ## atos
 ### 1° a chegada
 - O personagem principal chega na faculdade e é recepcionado pelo neymar (diretor), maldanado(professor), o neymar da as boas vindas de forma calorosa, o maldanado finge ser bom, o neymar sai, o maldanado começa a ser mal e assustar o personagem principal
+
+### 2º A prova.
+- Agora, com o protagonista finalmente chegando na sala, ele se prepara para fazer a prova do Vermelindo, um professor muito calmo e calculado que faz a prova mais dificil do curso inteiro.  
