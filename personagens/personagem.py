@@ -1,7 +1,4 @@
 class Personagem:
-    """
-    A classe Personagem representa um personagem genérico em um jogo.
-    """
     def __init__(self, nome, idade, vida):
         self.nome = nome
         self.idade = idade

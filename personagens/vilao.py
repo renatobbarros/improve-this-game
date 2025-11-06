@@ -1,10 +1,6 @@
-from personagens.personagem import Personagem  # Importa a classe Personagem
+from personagens.personagem import Personagem  
 
 class Vilao(Personagem):
-    """
-    A classe Vilao representa as características de um vilão no jogo.
-    Herda da classe Personagem.
-    """
     def __init__(self, nome, idade, vida, maldade):
         super().__init__(nome, idade, vida)
         niveis_validos = ['Baixa', 'Média', 'Alta']
