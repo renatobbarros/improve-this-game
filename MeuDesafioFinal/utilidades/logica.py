@@ -1,6 +1,5 @@
 from utilidades.textos import limpar_tela, esperar_tecla
 
-
 log_de_batalha = []
 
 def registrar_acao(acao):

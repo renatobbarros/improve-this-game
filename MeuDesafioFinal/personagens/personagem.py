@@ -8,10 +8,8 @@ class Personagem:
         self.vida = vida
         self.ataque_base = ataque
         self.defesa_base = defesa
-        
-
         self.inventario = {}  
-
+        self.habilidades = {}
     def esta_vivo(self):
         return self.vida > 0
 

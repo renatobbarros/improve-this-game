@@ -5,7 +5,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from personagens.heroi import Heroi
 from personagens.vilao import Vilao
 from personagens.personagem import Personagem
-from utilidades.logica import iniciar_batalha, log_de_batalha, exibir_log_final
+from utilidades.logica import iniciar_batalha, exibir_log_final
 from utilidades.textos import limpar_tela, esperar_tecla, exibir_narracao, exibir_dialogo
 
 def iniciar_jogo():
