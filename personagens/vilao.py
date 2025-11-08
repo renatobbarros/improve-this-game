@@ -1,4 +1,5 @@
 from personagens.personagem import Personagem  
+from .herois import Heroi
 
 class Vilao(Personagem):
     def __init__(self, nome, idade, vida, maldade):
@@ -14,6 +15,12 @@ class Vilao(Personagem):
         """
         print(f'{self.nome} atacou {personagem.nome}!')
         personagem.downgrade_vida()
+
+    def dialogar(self, outro):
+        if isinstance(outro, Heroi):
+            print(f"🗣️ {self.nome}: 'Tolo! Você acha que pode me derrotar, {outro.nome}?'")
+        else:
+            print(f"🗣️ {self.nome}: 'Saia do meu caminho, {outro.nome}.'")
 
     def __str__(self):
         return f'Vilão: {self.nome}, Idade: {self.idade}, Vida: {self.vida}, Maldade: {self.maldade}'

@@ -1,32 +1,27 @@
 class Personagem:
-    def __init__(self, nome, idade, vida):
+    def __init__(self, nome, vida, ataque, defesa):
         self.nome = nome
-        self.idade = idade
         self.vida = vida
+        self.ataque = ataque
+        self.defesa = defesa
 
-    def upgrade_vida(self, incremento=10):
-        """
-        Aumenta a vida do personagem. O valor padrão de incremento é 10.
-        """
-        self.vida += incremento
-        print(f'Vida de {self.nome} após upgrade: {self.vida}')
+    def atacar(self, alvo):
+        dano = self.ataque - alvo.defesa
+        
+        # Garante que o dano seja pelo menos 1 (para não curar o inimigo).
+        if dano < 1:
+            dano = 1
+            
+        print(f"⚔️ {self.nome} ataca {alvo.nome} e causa {dano} de dano!")
+        alvo.receber_dano(dano)
 
+    def receber_dano(self, quantidade):
+        self.vida -= quantidade
+        if self.vida < 0:
+            self.vida = 0 
 
-    def downgrade_vida(self):
-        """
-        Reduz a vida do personagem, garantindo que não fique negativa.
-        """
-        if self.vida > 15:
-            self.vida -= 15
-        else:
-            self.vida = 0
-        print(f'Vida de {self.nome} após downgrade: {self.vida}')
+    def esta_vivo(self):
+        return self.vida > 0
 
-    def update_nome(self, nome_editado):
-        """
-        Atualiza o nome do personagem.
-        """
-        self.nome = nome_editado
-
-    def __str__(self):
-        return f'Personagem: {self.nome}, Idade: {self.idade}, Vida: {self.vida}'
+    def exibir_status(self):
+        print(f"[{self.nome}] HP: {self.vida} | ATK: {self.ataque} | DEF: {self.defesa}")

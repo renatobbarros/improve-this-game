@@ -1,27 +1,46 @@
-from personagens.personagem import Personagem
+from personagens.herois import Heroi
 from personagens.vilao import Vilao
+from utilidades.logica import iniciar_batalha
+import random
 
-def main():
-    # Criando personagens e vilões
-    heroi = Personagem('Link', 30, 100)
-    npc = Personagem('Zelda', 28, 80)
-    vilao = Vilao('Ganon', 45, 120, 'Alta')
+status_herois = [
+    {"nome": "Aragorn", "vida": 120, "ataque": 18, "defesa": 10, "habilidade": "Golpe Real"},
+    {"nome": "Gandalf", "vida": 80, "ataque": 25, "defesa": 5, "habilidade": "Bola de Fogo"},
+]
 
-    # Mostrando personagens
-    print(heroi)
-    print(npc)
-    print(vilao)
+status_viloes = [
+    {"nome": "Dragão Smaug", "vida": 200, "ataque": 22, "defesa": 12},
+    {"nome": "Ork Lurtz", "vida": 90, "ataque": 15, "defesa": 8},
+]
 
-    # Vilão ataca o herói
-    vilao.ataque(heroi)
+# Usando listas para armazenar os objetos.
+lista_de_herois = []
+for status in status_herois:
+    lista_de_herois.append(
+        Heroi(status["nome"], status["vida"], status["ataque"], status["defesa"], status["habilidade"])
+    )
 
-    # Melhorando a vida do herói
-    heroi.upgrade_vida(20)
-    print(f'{heroi.nome} após upgrade de vida: {heroi.vida}')
+lista_de_viloes = []
+for status in status_viloes:
+    lista_de_viloes.append(
+        Vilao(status["nome"], status["vida"], status["ataque"], status["defesa"])
+    )
 
-    # Mudando nome do NPC
-    npc.update_nome('Princesa Zelda')
-    print(f'Nome atualizado: {npc.nome}')
 
-if __name__ == "__main__":
-    main()
+print("Bem-vindo ao jogo do desafio.")
+print("Escolha seu Herói:")
+for i, heroi in enumerate(lista_de_herois):
+    print(f"{i+1}. {heroi.nome}")
+
+escolha_heroi = int(input("> ")) - 1
+jogador = lista_de_herois[escolha_heroi]
+
+inimigo = random.choice(lista_de_viloes)
+
+print(f"\nUm {inimigo.nome} selvagem aparece!\n")
+input("Pressione ENTER para iniciar a batalha...")
+
+# Chama a função que contém o loop da batalha
+iniciar_batalha(jogador, inimigo)
+
+print("\n--- Fim de Jogo ---")
